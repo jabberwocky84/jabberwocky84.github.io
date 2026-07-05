@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kyryliuk Consulting — медичний менеджмент, гранти, бізнес-аналітика, стратегія</title>
+<meta name="description" content="Кирилюк Консалтинг: управлінські рішення для медичних закладів та бізнесу. Трансформація КНП, НСЗУ, МІС, грантові заявки, KPI та стратегії розвитку. Рівне · вся Україна онлайн.">
+<meta property="og:title" content="Kyryliuk Consulting — управлінські рішення, які працюють">
+<meta property="og:description" content="Медичний менеджмент, гранти, бізнес-аналітика та стратегія. 20+ років управлінського досвіду.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="theme-color" content="#14151A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14151A;
+  --ink-soft:#3C3F49;
+  --muted:#6B7080;
+  --blue:#4169E1;
+  --blue-dark:#2E4FBF;
+  --blue-tint:#EDF1FD;
+  --paper:#FFFFFF;
+  --cloud:#F4F5F9;
+  --line:#E4E6EE;
+  --display:'Oswald',sans-serif;
+  --body:'Inter',sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.7;font-size:17px}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+.h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.5vw,44px);line-height:1.12;text-transform:uppercase;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-weight:600;font-size:15px;padding:15px 26px;border-radius:8px;transition:background .2s,color .2s,border-color .2s;cursor:pointer}
+.btn .aro{transition:transform .2s}
+.btn:hover .aro{transform:translate(2px,-2px)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-dark)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-light:hover{background:var(--blue-tint)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+section[id]{scroll-margin-top:96px}
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--blue);color:#fff;font-weight:600;padding:12px 20px;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+.c-list a{overflow-wrap:anywhere}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-name{line-height:1.05}
+.brand-name b{font-family:var(--display);font-weight:600;font-size:20px;letter-spacing:.02em;display:block}
+.brand-name span{font-family:var(--mono);font-size:10px;letter-spacing:.42em;text-transform:lowercase;color:var(--muted)}
+.nav{display:flex;align-items:center;gap:32px}
+.nav a{font-size:15px;font-weight:500;color:var(--ink-soft);transition:color .2s}
+.nav a:hover{color:var(--blue)}
+.nav .btn{padding:11px 20px;font-size:14px}
+.burger{display:none;background:none;border:none;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px auto;transition:transform .2s,opacity .2s}
+
+/* hero */
+.hero{padding:96px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero h1{font-family:var(--display);font-weight:600;font-size:clamp(42px,6.5vw,76px);line-height:1.05;text-transform:uppercase;letter-spacing:.005em}
+.hero h1 .accent{color:var(--blue);white-space:nowrap}
+.hero p{margin:26px 0 34px;max-width:560px;color:var(--ink-soft);font-size:18px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-mark{justify-self:end}
+.hero-mark svg{width:min(300px,100%);height:auto}
+.kpi-card{width:min(330px,100%);background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 26px 14px}
+.kpi-top{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.kpi-live{color:var(--blue);display:flex;align-items:center;gap:6px}
+.kpi-live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue)}
+.kpi-metric{display:flex;justify-content:space-between;align-items:baseline;margin-top:20px;font-size:15px;font-weight:500;color:var(--ink)}
+.kpi-metric b{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--blue)}
+.kpi-row b i{font-style:normal;color:var(--blue)}
+.kpi-bars{position:relative;display:flex;align-items:flex-end;gap:8px;height:92px;margin:20px 0 6px;border-bottom:1px solid var(--line)}
+.kpi-bars i{flex:1;background:var(--blue-tint);border-radius:6px 6px 0 0}
+.kpi-bars i.on{background:var(--blue)}
+.kpi-aro{position:absolute;top:-8px;right:0;color:var(--blue);font-size:26px;font-weight:600;line-height:1}
+.kpi-row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink-soft)}
+.kpi-row:last-child{border-bottom:none}
+.kpi-row b{color:var(--ink);font-weight:600;text-align:right}
+.hero-note{margin-top:18px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+
+/* stats */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--cloud)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:38px 28px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:none}
+.stat b{font-family:var(--mono);font-weight:500;font-size:clamp(28px,3.4vw,40px);color:var(--blue);display:block;line-height:1.15}
+.stat span{font-size:14px;color:var(--ink-soft);display:block;margin-top:8px;line-height:1.5}
+
+/* sections */
+section{padding:96px 0}
+.sec-head{max-width:640px;margin-bottom:56px}
+.sec-head p{margin-top:18px;color:var(--ink-soft)}
+
+/* services */
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.svc{border:1px solid var(--line);border-radius:14px;padding:34px 32px;display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
+.svc:hover{border-color:var(--blue);transform:translateY(-3px)}
+.svc-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.svc h3{font-family:var(--display);font-weight:600;font-size:26px;text-transform:uppercase;letter-spacing:.01em;line-height:1.2}
+.svc-top svg{flex:none;margin-top:4px}
+.svc>p{margin:14px 0 20px;color:var(--ink-soft);font-size:16px}
+.svc details{border-top:1px solid var(--line)}
+.svc summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;padding:14px 0;font-weight:600;font-size:15px}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary:hover{color:var(--blue)}
+.svc summary::after{content:"+";font-family:var(--mono);font-size:18px;color:var(--blue)}
+.svc details[open] summary::after{content:"–"}
+.svc details ul{padding-bottom:16px}
+.svc details li{position:relative;padding:4px 0 4px 24px;font-size:15px;color:var(--ink-soft)}
+.svc details li::before{content:"↗";position:absolute;left:0;color:var(--blue);font-weight:600}
+.svc details p{padding-bottom:16px;font-size:15px;color:var(--ink-soft)}
+.svc-for{margin-top:auto;padding-top:18px;font-family:var(--mono);font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* about */
+.about{background:var(--cloud)}
+.about .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about .cols p+p{margin-top:18px}
+.about .cols p{color:var(--ink-soft)}
+.exp-cards{display:grid;gap:16px}
+.exp{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px 26px}
+.exp b{font-family:var(--display);font-weight:600;font-size:19px;text-transform:uppercase;letter-spacing:.02em}
+.exp b i{font-style:normal;color:var(--blue)}
+.exp span{display:block;margin-top:6px;font-size:14.5px;color:var(--muted)}
+
+/* competencies */
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.comp{padding:28px 0;border-top:1px solid var(--line)}
+.comp h3{font-size:17px;font-weight:600;color:var(--blue);display:flex;gap:10px;align-items:baseline}
+.comp h3::before{content:"↗";font-family:var(--mono)}
+.comp p{margin-top:10px;font-size:15.5px;color:var(--ink-soft)}
+
+/* contact */
+.contact{background:var(--ink);color:#fff}
+.contact .cols{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.contact .h2{color:#fff}
+.contact .lead{margin:20px 0 32px;color:#B9BDC9;max-width:480px}
+.c-list li{display:flex;gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid #2A2C35;font-size:17px}
+.c-list li:first-child{border-top:1px solid #2A2C35}
+.c-list .lbl{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#8A8F9E;min-width:96px}
+.c-list a{color:#fff;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.c-list a:hover{color:var(--blue-tint);border-color:var(--blue)}
+
+/* footer */
+.site-foot{padding:30px 0}
+.site-foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.site-foot p{font-size:13.5px;color:var(--muted)}
+.site-foot .top{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.site-foot .top:hover{color:var(--blue)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .btn .aro{transition:none}
+}
+
+/* responsive */
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-mark{display:none}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat{border-left:none;border-top:1px solid var(--line)}
+  .stat:nth-child(-n+2){border-top:none}
+  .stat:nth-child(even){border-left:1px solid var(--line)}
+  .services-grid,.comp-grid,.about .cols,.contact .cols{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  section{padding:68px 0}
+  .hero{padding:64px 0 56px}
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 20px;display:none}
+  .nav.open{display:flex}
+  .nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav .btn{margin-top:16px;justify-content:center}
+}
+@media (max-width:560px){
+  .stats .wrap{grid-template-columns:1fr}
+  .stat{border-left:none!important;border-top:1px solid var(--line)}
+  .stat:first-child{border-top:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#poslugy">Перейти до змісту</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Kyryliuk Consulting — на початок сторінки">
+      <img src="data:image/png;base64,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" width="34" height="39" alt="" aria-hidden="true">
+      <span class="brand-name"><b>Kyryliuk</b><span>consulting</span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Головне меню">
+      <a href="#poslugy">Послуги</a>
+      <a href="#pro-nas">Про нас</a>
+      <a href="#rezultaty">Результати</a>
+      <a href="#kontakty">Контакти</a>
+      <a class="btn btn-blue" href="mailto:info@kyryliuk-consulting.com?subject=Хочу безкоштовну консультацію">Безкоштовна консультація</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Кирилюк Консалтинг · Рівне · вся Україна онлайн</p>
+      <h1>Управлінські рішення, <span class="accent">які працюють&nbsp;↗</span></h1>
+      <p>Консалтинг у сфері медичного менеджменту, грантів, бізнес-аналітики та стратегії. Понад 20 років керування на топ-позиціях у банківській та медичній сферах — і конкретні результати, підтверджені на практиці.</p>
+      <div class="hero-cta">
+        <a class="btn btn-blue" href="mailto:info@kyryliuk-consulting.com?subject=Хочу безкоштовну консультацію">Отримати безкоштовну консультацію <span class="aro">↗</span></a>
+        <a class="btn btn-ghost" href="#poslugy">Наші послуги</a>
+      </div>
+      <p class="hero-note">Перша консультація — безкоштовна.</p>
+    </div>
+    <div class="hero-mark rv" aria-hidden="true">
+      <div class="kpi-card">
+        <div class="kpi-top"><span>Ваш бізнес</span><span class="kpi-live">під контролем</span></div>
+        <div class="kpi-metric"><span>Дохід</span><b>зростає ↗</b></div>
+        <div class="kpi-bars"><i style="height:32%"></i><i style="height:50%"></i><i style="height:44%"></i><i style="height:64%"></i><i style="height:88%" class="on"></i><span class="kpi-aro">↗</span></div>
+        <div class="kpi-row"><span>Витрати</span><b>оптимізовано <i>↘</i></b></div>
+        <div class="kpi-row"><span>Процеси</span><b>прозорі та керовані</b></div>
+        <div class="kpi-row"><span>Рішення</span><b>на основі даних</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats" aria-label="Ключові показники">
+  <div class="wrap">
+    <div class="stat rv"><b>20+</b><span>років управлінського досвіду на топ-позиціях</span></div>
+    <div class="stat rv"><b>250 млн ₴</b><span>річні бюджети під особистим управлінням</span></div>
+    <div class="stat rv"><b>10+</b><span>років у банківському секторі</span></div>
+    <div class="stat rv"><b>~10</b><span>років в управлінні медичним закладом</span></div>
+  </div>
+</div>
+
+<section id="poslugy">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Послуги</p>
+      <h2 class="h2">Чим ми допомагаємо</h2>
+      <p>Чотири напрями, в основі кожного — практика керівника, який особисто проходив ці процеси, а не теорія з підручника.</p>
+    </div>
+    <div class="services-grid">
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Медичний менеджмент</h3>
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M6 20 17 9h-6V5h13v13h-4v-6L9 23z" fill="#4169E1"/></svg>
+        </div>
+        <p>Трансформація КНП відповідно до реформи МОЗ і побудова фінансово стійкого, керованого закладу.</p>
+        <details>
+          <summary>Що входить</summary>
+          <ul>
+            <li>Аудит поточного стану закладу та фінансового плану</li>
+            <li>Впровадження та оптимізація МІС</li>
+            <li>Перехід на модель фінансування НСЗУ, підготовка до контрактування</li>
+            <li>Оптимізація фінансового плану та статей витрат</li>
+            <li>Аутсорсинг: харчування, клінінг, охорона</li>
+            <li>Реорганізація підрозділів, розробка СОПів</li>
+            <li>Аналітичні панелі й дашборди для керівника</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Результати на практиці</summary>
+          <p>Управління річним бюджетом лікарні до 250 млн грн; скорочення витрат без втрати якості завдяки аутсорсингу; успішне контрактування з НСЗУ і стабільне фінансування закладу.</p>
+        </details>
+        <p class="svc-for">Для директорів КНП, приватних клінік та органів місцевого самоврядування — власників медзакладів</p>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Гранти</h3>
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M6 20 17 9h-6V5h13v13h-4v-6L9 23z" fill="#4169E1"/></svg>
+        </div>
+        <p>Грантове фінансування як реальний ресурс розвитку: супровід усього циклу — від ідеї до звіту перед донором.</p>
+        <details>
+          <summary>Що входить</summary>
+          <ul>
+            <li>Аналіз проєкту та підбір грантових програм</li>
+            <li>Написання грантової заявки «під ключ»</li>
+            <li>Бюджет проєкту та логіко-структурна матриця</li>
+            <li>Супровід реалізації проєкту</li>
+            <li>Підготовка звітності перед донорами</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Чому ми</summary>
+          <p>Досвід написання грантових заявок поєднано з 20+ роками фінансового планування на рівні обласних установ: заявки переконливі для донорів, а бюджети витримують перевірки.</p>
+        </details>
+        <p class="svc-for">Для медзакладів, громадських організацій, громад, малого та середнього бізнесу</p>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Бізнес-аналітика</h3>
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M6 20 17 9h-6V5h13v13h-4v-6L9 23z" fill="#4169E1"/></svg>
+        </div>
+        <p>Рішення на основі даних, а не інтуїції: прозора система показників, яка показує реальний стан справ.</p>
+        <details>
+          <summary>Що входить</summary>
+          <ul>
+            <li>Розробка та впровадження систем KPI</li>
+            <li>Аналітичні панелі та дашборди</li>
+            <li>Аналіз фінансових показників і структури витрат</li>
+            <li>Аналіз клієнтського портфеля та продуктів</li>
+            <li>Регулярний управлінський звіт для керівника</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Результати на практиці</summary>
+          <p>Впроваджені KPI-системи для підрозділів банку та лікарні; підвищення фінансових показників роздрібного бізнесу філіалу; дашборди, якими керівництво користується щодня.</p>
+        </details>
+        <p class="svc-for">Для керівників медзакладів, фінансових установ і власників бізнесу</p>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Стратегія</h3>
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M6 20 17 9h-6V5h13v13h-4v-6L9 23z" fill="#4169E1"/></svg>
+        </div>
+        <p>Стратегія як робочий інструмент, а не документ «для полиці»: цілі, показники, відповідальні та контроль виконання.</p>
+        <details>
+          <summary>Що входить</summary>
+          <ul>
+            <li>Розробка стратегії розвитку організації</li>
+            <li>Каскадування цілей до рівня підрозділів та KPI</li>
+            <li>Удосконалення організаційної структури</li>
+            <li>Впровадження стандартів і регламентів (СОПів)</li>
+            <li>Система контролю виконання та коригування планів</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Результати на практиці</summary>
+          <p>Розроблено дві стратегії розвитку, впроваджені у великих організаціях; проведені реорганізації підрозділів у банку та лікарні; стандарти, що працюють і після завершення проєкту.</p>
+        </details>
+        <p class="svc-for">Для керівників і власників, які хочуть перейти від «гасіння пожеж» до системного управління</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="pro-nas" class="about">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Про компанію</p>
+      <h2 class="h2">Два сектори. Один рівень вимог</h2>
+    </div>
+    <div class="cols">
+      <div class="rv">
+        <p>Kyryliuk Consulting — консалтингова компанія з Рівного, що працює з клієнтами по всій Україні онлайн та офлайн. В основі — понад 20 років управлінського досвіду на позиціях топ-менеджера у двох стратегічно важливих секторах економіки: банківському та медичному.</p>
+        <p>Ми поєднуємо фінансову дисципліну банківського сектору з глибоким розумінням специфіки медичних закладів і реформи охорони здоров'я. Досвід охоплює управління великими командами, фінансове планування, оптимізацію бізнес-процесів та впровадження змін на рівні всієї організації.</p>
+        <p>Окремий напрям — системна передача знань: 3 роки викладання курсу «Менеджмент підприємства» у НУВГП.</p>
+      </div>
+      <div class="exp-cards rv">
+        <div class="exp">
+          <b>Банківська сфера — <i>10+ років</i></b>
+          <span>Заступник директора обласного філіалу банку</span>
+        </div>
+        <div class="exp">
+          <b>Медична сфера — <i>~10 років</i></b>
+          <span>Заступник директора обласної лікарні</span>
+        </div>
+        <div class="exp">
+          <b>Викладання — <i>3 роки</i></b>
+          <span>Курс «Менеджмент підприємства», НУВГП</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rezultaty">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Чому нам довіряють</p>
+      <h2 class="h2">Досвід, перевірений практикою</h2>
+      <p>Ми не консультуємо з боку — кожен пункт нижче пройдено зсередини, на керівних посадах, з відповідальністю за результат.</p>
+    </div>
+    <div class="comp-grid">
+      <div class="comp rv">
+        <h3>Наводимо лад у фінансах</h3>
+        <p>За плечима — річні бюджети обласного рівня до 250 млн грн у банківській та медичній сферах. Плануємо, контролюємо виконання і знаходимо резерви економії без шкоди для якості.</p>
+      </div>
+      <div class="comp rv">
+        <h3>Перетворюємо цілі на систему</h3>
+        <p>Стратегія розвитку, KPI для кожного підрозділу, контроль виконання та коригування планів. Стратегії, які ми розробляли, впроваджені й працюють у великих організаціях — а не лежать у шухляді.</p>
+      </div>
+      <div class="comp rv">
+        <h3>Знаходимо, де ви втрачаєте гроші</h3>
+        <p>Аутсорсинг непрофільних функцій, реорганізація підрозділів, стандарти та регламенти (СОПи). Результат — скорочення витрат без втрати якості, перевірено у закладі з сотнями працівників.</p>
+      </div>
+      <div class="comp rv">
+        <h3>Проводимо медзаклади через реформу</h3>
+        <p>Впровадження МІС, перехід на фінансування НСЗУ, контрактування, оптимізація фінансового плану. Цей шлях ми пройшли самі — на позиції керівника закладу, а не спостерігача.</p>
+      </div>
+      <div class="comp rv">
+        <h3>Приносимо банківську дисципліну</h3>
+        <p>Понад 10 років у банку навчили працювати з даними, ризиками та клієнтським портфелем. Цю фінансову точність ми переносимо в кожен проєкт — від лікарні до виробництва.</p>
+      </div>
+      <div class="comp rv">
+        <h3>Навчаємо ваші команди</h3>
+        <p>Зміни працюють лише тоді, коли їх розуміють люди. Передаємо знання системно — досвід викладання менеджменту в університеті (НУВГП) застосовуємо в навчанні команд клієнтів.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakty" class="contact">
+  <div class="wrap cols">
+    <div class="rv">
+      <p class="eyebrow">Контакти</p>
+      <h2 class="h2">Почнімо з короткої розмови</h2>
+      <p class="lead">Розкажіть про свою ситуацію — і вже в першій розмові отримаєте погляд збоку та конкретні перші кроки. Безкоштовно і без жодних зобовʼязань.</p>
+      <a class="btn btn-light" href="mailto:info@kyryliuk-consulting.com?subject=Хочу безкоштовну консультацію">Отримати безкоштовну консультацію <span class="aro">↗</span></a>
+    </div>
+    <ul class="c-list rv">
+      <li><span class="lbl">Email</span><a href="mailto:info@kyryliuk-consulting.com">info@kyryliuk-consulting.com</a></li>
+      <li><span class="lbl">Телефон</span><a href="tel:+380904567890">+38 090 456 78 90</a></li>
+      <li><span class="lbl">Локація</span><span>м. Рівне · вся Україна онлайн</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>© <span id="y">2026</span> Kyryliuk Consulting. Усі права захищено.</p>
+    <a class="top" href="#top">Нагору ↑</a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+
+var burger = document.getElementById('burger');
+var nav = document.getElementById('nav');
+burger.addEventListener('click', function(){
+  var open = nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+  burger.setAttribute('aria-label', open ? 'Закрити меню' : 'Відкрити меню');
+});
+nav.addEventListener('click', function(e){
+  if(e.target.tagName === 'A'){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+});
+
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+}
+</script>
+</body>
+</html>
