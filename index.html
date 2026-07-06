@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kyryliuk Consulting — медичний менеджмент, гранти, бізнес-аналітика, стратегія</title>
+<title>Kyryliuk Consulting - медичний менеджмент, гранти, бізнес-аналітика, стратегія</title>
 <meta name="description" content="Кирилюк Консалтинг: управлінські рішення для медичних закладів та бізнесу. Трансформація КНП, НСЗУ, МІС, грантові заявки, KPI та стратегії розвитку. Рівне · вся Україна · онлайн.">
-<meta property="og:title" content="Kyryliuk Consulting — управлінські рішення, які працюють">
+<meta property="og:title" content="Kyryliuk Consulting - управлінські рішення, які працюють">
 <meta property="og:description" content="Медичний менеджмент, гранти, бізнес-аналітика та стратегія. 20+ років управлінського досвіду.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#101116">
@@ -31,7 +31,7 @@
   --ease:cubic-bezier(.22,.8,.3,1);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;interpolate-size:allow-keywords}
 *{-webkit-tap-highlight-color:transparent}
 body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.7;font-size:17px;overflow-x:hidden}
 img,svg{display:block;max-width:100%}
@@ -162,6 +162,8 @@ section{padding:110px 0}
 .svc summary::-webkit-details-marker{display:none}
 .svc summary::after{content:"+";font-family:var(--mono);font-size:18px;color:var(--blue)}
 .svc details[open] summary::after{content:"–"}
+.svc details::details-content{block-size:0;overflow:hidden;transition:block-size .45s var(--ease),content-visibility .45s allow-discrete}
+.svc details[open]::details-content{block-size:auto}
 @keyframes acc{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
 .svc details[open]>ul,.svc details[open]>p{animation:acc .4s var(--ease)}
 .svc details ul{padding-bottom:16px}
@@ -264,7 +266,7 @@ section{padding:110px 0}
 
 <header class="site-head" id="head">
   <div class="wrap">
-    <a href="#top" class="brand" aria-label="Kyryliuk Consulting — на початок сторінки">
+    <a href="#top" class="brand" aria-label="Kyryliuk Consulting - на початок сторінки">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACYCAYAAAAlUEFHAAAH+0lEQVR4nO2dT2gcVRjAvwkNpl1YXYPNViK0QSoaWxSXNsX0IGyKpxIotGBArQfNRdOUtmlu0la6WqHZ6KWXpB5SVBSix2QPQgrZ0lAluKn4JxZcTCvEwsoaIeDzsBmbfZudzOy8f9+873dqApl5lB/v1072feMwxoAgXJp0L4AwCxKCqIKEIKrYwn/jyZ27jPpHxc93fnV0r8F05heB5QsM9uwCOPCsE+rvq0YIAg/zi8CuTTGYX6x83bEj/DVJCGSUVyA5eZ0tTc4AlP8Rf30SAgluFqZvyhHBhYQwnNkCsK9mHmRBNiSEgcjOghckhEHMLwLLzTGY/V69CC4khAGozoIXJIQmdGbBCxJCMSZkwQsSQhEmZcELEkIipmbBCxJCAvOLld1gtqB7JcEhIQRRXoHkbIEt5eZAWxa2Pxr+94AkREgwZsELEqJBMGfBCxIiACZkQTYkhA+ilgUvSAgPopoFL0gIjvIKJKfn2FK+EN0seEFCrGFTFrywXgj+c4m2Y6UQtmfBC+uEyM0xduVru7PghXUHddIpx+k9SEc96mGdEAAAfT3gjA87w20J3SsxDyuFAABoS0BmfNhx+npot1iPtUK40G5RjfVCANBusR4SYh20W5AQNdi+W5AQdUi/AFbuFCREHSZy7OK9+7pXEYxkAgbDXoOE2IDcHGO5Od2r0AMJwXHvTzg7Ma17FfogITgwpkIkJMQ6bE6FCwmxRnkFkjanwoWEWGNimi3ZnAoXEgIqn5qavK57FWZgvRDlFUhe/syo0ZxasV4ISkU1Vgvxy+/wA6WiGquFuPAJe0r3GkzDWiEmphmjVNRipRC2P572wkohzl5hF3WvwVSsE4JS4Y1VQlAqNscqISgVm2ONEJhSEWtp+Oc+DXtvK4TAlIq2BMDHg85wOhX8Z2Nb4W7Y+1shBKZUZPqd4bYEZE4edZyTRx1Q/UHfyAuBKRV9PQ60JSDjfp1OgZPpb2y3aJRIC4EtFX09UHMYRPVuEWkhMKVi8Jj3wSBVu0VkhcCUit5uB/Z21O4OPCp2i0gKgS4VhyDQGzdl7haRFAJbKmItwf+7KGu3iJwQkzN4UpFOga9UbHINobtFpIRAl4oeZ1jQtTInj4Z757dLpIS4/Dm7iGW6HP/MwRQiI8TkDGNYZk6mU5WtXvc6NiISQtiaChlEQoiJHKVCFOiFwHRA1+RUuKAWglIhHtRCYJrlYHoqXNAKQamQA0ohKBXyQCkEpUIe6ISgVMgFlRCUCvmgEoJSIR80QmBKxd4OfKlwQSEEplTEWgAGj+FLhQsKIVCl4hDOVLgYLwS2VPR240yFi9FCNMfaAUsqAABe3nNb9xJCY7QQrZ0DgCUVy4UsvDv0FpRKped0ryUMxgrx8K4jEN95RPcyfLFaLsJyIQvFYhE+Gsl+q3s9YTBSiKbmOLR2Duhehm+K37zy/5/Hx8bgRj6PdhKqkUK0dg7Alm3tupfhi+VCFlbLxarvDZ06jTYdxgmxbXsXJHYf170MX7ip4MGcDqOEaGqOQ3LfB7qX4Zv1qeDBmg6jhMCeCh6M6TBGiOZYO/pU8GBMhzFCPPHSNd1L8I1XKniwpcMIIaKWCp73zp2XtBrxaBeiOdaO5pmD31TwLCwswOhIFsUuoV0ITKko3epv+GdHR0bg9sKC8VJoFQJTKlZ/G4flpYVQ1xg6dVrQauShTQgbUsGDIR3ahMCUins3z0CpVBJyratjY1AsFq8KuZgEtAiBKRX3fxyHv//IC7teqVSCoVOnXxN2QcEoF8LGVPDcyOfh6tiYkelQLgSmVGxZGoV/V8Wkgmd0JGtkOpQKgSkVpTtfwk+3vpB3fUPToUwISkUtJqZDmRCYUrFcGA38eLpRTEuHEiGwpaJ0R14qau5nWDqkC0Gp2ByT0iFdiMdfvCL7FsJQmQoeU9IhVYjE7uPw0CNPy7yFMFSnoub+hqRDmhCUiuCYkA5pQiT3XYKm5risywtFZyp4dKdDihCJ3cdh62P7ZVxaOLpTwaM7HcKFoFSER2c6hAvR2jlAqRDA6EhWy0f4hQqB6YCuaangWUuH8o/wCxOCUiGe6akpyE1NKU2HMCEwPZ4+vP8vY1PBc0bx6S8hQmBKxYFOgLdffcZ5/Q0cp8RUpyO0EJhSEWsBePNwZULcOydOPN/ejmNHU5mO0EJgSsX6CXHxePy79z+8pHtJvrlw7rySdIQSAlMqNpoQt7+rC006VB0cblgIbKmoN0wUUzpUHBxuWAhMqeg9WH+YKLZ0yJ450ZAQmFJRmUrvPUyU0vGAwEJgSgUAQKbf39xpSkeFwEJgSkWQVxRQOioEEiJqqeChdAQQIqqp4LE9Hb6FiGoqeGxPhy8htm3vinQqeGxOx6ZCYBsm2mgqeGxNx6ZC2JIKHlvT4SkEprnTIlLBY2M66gphayp4bEtHXSFsTQUPtnSEHZK6oRCY5k7LSAUPpnSEnXS3oRCYZjnISgUPpnSEGZJaIwSmVPR2q3tHJrZ0NDokdUMhMNCWAOg7BDtU3tOGdGifdd0og8cciLXAXdX3xZaOoAeHUQrR2+3A3g49b9BFmI5AB4fRCaEjFTyY0hH04DA6Ifp69KSCB1c6/M+cQCVEOgWQTpnxsnVM6QgycwKNEJUHUGqeOfgliulAI4TMx9NhiFo6UAhhUip4opYO44UwMRU8UUqH8UKYmgqeqKTDYcyIibqEIRi/QxBqISGIKkgIoor/ACOWOXojX+V8AAAAAElFTkSuQmCC" width="34" height="39" alt="">
       <span class="brand-name"><b>Kyryliuk</b><span>consulting</span></span>
     </a>
@@ -291,12 +293,12 @@ section{padding:110px 0}
         <span class="mask"><span class="line">рішення,</span></span>
         <span class="mask"><span class="line accent">які працюють ↗</span></span>
       </h1>
-      <p class="hero-sub fade">Консалтинг у сфері медичного менеджменту, грантів, бізнес-аналітики та стратегії. Понад 20 років керування на топ-позиціях у банківській та медичній сферах — і конкретні результати, підтверджені на практиці.</p>
+      <p class="hero-sub fade">Консалтинг у сфері медичного менеджменту, грантів, бізнес-аналітики та стратегії. Понад 20 років керування на топ-позиціях у банківській та медичній сферах - і конкретні результати, підтверджені на практиці.</p>
       <div class="hero-cta fade">
         <a class="btn btn-blue" href="mailto:info@kyryliuk-consulting.com?subject=Хочу безкоштовну консультацію">Отримати безкоштовну консультацію <span class="aro">↗</span></a>
         <a class="btn btn-ghost" href="#poslugy">Наші послуги</a>
       </div>
-      <p class="hero-note fade">Перша розмова — безкоштовно і без зобовʼязань.</p>
+      <p class="hero-note fade">Перша розмова - безкоштовно і без зобовʼязань.</p>
     </div>
     <div class="hero-card" aria-hidden="true">
       <div class="kpi-card">
@@ -322,9 +324,9 @@ section{padding:110px 0}
 <div class="stats" aria-label="Ключові показники">
   <div class="wrap">
     <div class="stat rv"><b><span class="num" data-count="20">0</span>+</b><span>років управлінського досвіду на топ-позиціях</span></div>
-    <div class="stat rv d1"><b><span class="num" data-count="250">0</span> млн</b><span>грн — річні бюджети під особистим управлінням</span></div>
-    <div class="stat rv d2"><b><span class="num" data-count="2">0</span></b><span>сектори глибокої експертизи — банківський та медичний</span></div>
-    <div class="stat rv d3"><b><span class="num" data-count="4">0</span></b><span>напрями консалтингу — від фінансів до стратегії</span></div>
+    <div class="stat rv d1"><b><span class="num" data-count="250">0</span> млн</b><span>грн - річні бюджети під особистим управлінням</span></div>
+    <div class="stat rv d2"><b><span class="num" data-count="2">0</span></b><span>сектори глибокої експертизи - банківський та медичний</span></div>
+    <div class="stat rv d3"><b><span class="num" data-count="4">0</span></b><span>напрями консалтингу - від фінансів до стратегії</span></div>
   </div>
 </div>
 
@@ -333,7 +335,7 @@ section{padding:110px 0}
     <div class="sec-head rv">
       <p class="eyebrow">Послуги</p>
       <h2 class="h2">Чим ми допомагаємо</h2>
-      <p>Чотири напрями, в основі кожного — практика керівника, який особисто проходив ці процеси, а не теорія з підручника.</p>
+      <p>Чотири напрями, в основі кожного - практика керівника, який особисто проходив ці процеси, а не теорія з підручника.</p>
     </div>
     <div class="services-grid">
 
@@ -344,8 +346,8 @@ section{padding:110px 0}
               <h3>Медичний менеджмент</h3>
               <span class="mark-aro" aria-hidden="true">↗</span>
             </div>
-            <p>Трансформація КНП відповідно до реформи МОЗ і побудова фінансово стійкого, керованого закладу. Цей шлях пройдено зсередини — з відповідальністю за результат.</p>
-            <p class="svc-for">Для директорів КНП, приватних клінік та органів місцевого самоврядування — власників медзакладів</p>
+            <p>Трансформація КНП відповідно до реформи МОЗ і побудова фінансово стійкого, керованого закладу. Цей шлях пройдено зсередини - з відповідальністю за результат.</p>
+            <p class="svc-for">Для директорів КНП, приватних клінік та органів місцевого самоврядування - власників медзакладів</p>
           </div>
           <div class="feat-details">
             <details open>
@@ -373,7 +375,7 @@ section{padding:110px 0}
           <h3>Гранти</h3>
           <span class="mark-aro" aria-hidden="true">↗</span>
         </div>
-        <p>Грантове фінансування як реальний ресурс розвитку: супровід усього циклу — від ідеї до звіту перед донором.</p>
+        <p>Грантове фінансування як реальний ресурс розвитку: супровід усього циклу - від ідеї до звіту перед донором.</p>
         <details>
           <summary>Що входить</summary>
           <ul>
@@ -439,7 +441,7 @@ section{padding:110px 0}
 
       <article class="svc svc-feat rv d2" style="justify-content:center;align-items:flex-start;background:var(--dark);border-color:var(--dark)">
         <h3 style="color:#fff;font-family:var(--display);font-weight:600;font-size:26px;text-transform:uppercase">Не знайшли своє завдання?</h3>
-        <p style="color:#B9BDC9;margin:12px 0 22px;font-size:16px">Опишіть ситуацію — розберемось у задачі та запропонуємо перші кроки.</p>
+        <p style="color:#B9BDC9;margin:12px 0 22px;font-size:16px">Опишіть ситуацію - розберемось у задачі та запропонуємо перші кроки.</p>
         <div style="display:flex;flex-wrap:wrap;gap:12px">
           <a class="btn btn-light" href="mailto:info@kyryliuk-consulting.com?subject=Хочу безкоштовну консультацію">Написати на email <span class="aro">↗</span></a>
           <a class="btn btn-dgh" href="tel:+380904567890">Зателефонувати</a>
@@ -456,46 +458,46 @@ section{padding:110px 0}
     <div class="sec-head rv">
       <p class="eyebrow">Про нас</p>
       <h2 class="h2">Досвід, перевірений практикою</h2>
-      <p>Працюємо з медичними закладами та бізнесом по всій Україні — онлайн і на місці, від разової консультації до супроводу змін.</p>
+      <p>Працюємо з медичними закладами та бізнесом по всій Україні - онлайн і на місці, від разової консультації до супроводу змін.</p>
     </div>
     <div class="exp-row rv d1">
         <div class="exp">
-          <b>Досвід — <i>20+ років</i></b>
+          <b>Досвід - <i>20+ років</i></b>
           <span>Топ-менеджмент у банківському та медичному секторах</span>
         </div>
         <div class="exp">
-          <b>Команда — <i>міжнародний рівень</i></b>
+          <b>Команда - <i>міжнародний рівень</i></b>
           <span>Фінансовий контролінг, планування та аналітика в глобальних корпораціях (консалтинг, юриспруденція, медіа); викладання менеджменту в університеті</span>
         </div>
         <div class="exp">
-          <b>Підхід — <i>до результату</i></b>
-          <span>Не залишаємо рекомендації на папері — супроводжуємо впровадження до вимірюваних змін</span>
+          <b>Підхід - <i>до результату</i></b>
+          <span>Не залишаємо рекомендації на папері - супроводжуємо впровадження до вимірюваних змін</span>
         </div>
     </div>
     <div class="comp-grid">
       <div class="comp rv">
         <h3>Наводимо лад у фінансах</h3>
-        <p>За плечима — річні бюджети обласного рівня до 250 млн грн у банківській та медичній сферах. Плануємо, контролюємо виконання і знаходимо резерви економії без шкоди для якості.</p>
+        <p>За плечима - річні бюджети обласного рівня до 250 млн грн у банківській та медичній сферах. Плануємо, контролюємо виконання і знаходимо резерви економії без шкоди для якості.</p>
       </div>
       <div class="comp rv d1">
         <h3>Перетворюємо цілі на систему</h3>
-        <p>Стратегія розвитку, KPI для кожного підрозділу, контроль виконання та коригування планів. Розроблені стратегії впроваджені й працюють у великих організаціях — а не лежать у шухляді.</p>
+        <p>Стратегія розвитку, KPI для кожного підрозділу, контроль виконання та коригування планів. Розроблені стратегії впроваджені й працюють у великих організаціях - а не лежать у шухляді.</p>
       </div>
       <div class="comp rv">
         <h3>Знаходимо, де ви втрачаєте гроші</h3>
-        <p>Аутсорсинг непрофільних функцій, реорганізація підрозділів, стандарти та регламенти (СОПи). Результат — скорочення витрат без втрати якості, перевірено у закладі з сотнями працівників.</p>
+        <p>Аутсорсинг непрофільних функцій, реорганізація підрозділів, стандарти та регламенти (СОПи). Результат - скорочення витрат без втрати якості, перевірено у закладі з сотнями працівників.</p>
       </div>
       <div class="comp rv d1">
         <h3>Проводимо медзаклади через реформу</h3>
-        <p>Впровадження МІС, перехід на фінансування НСЗУ, контрактування, оптимізація фінансового плану. Цей шлях пройдено зсередини — з відповідальністю керівника, а не спостерігача.</p>
+        <p>Впровадження МІС, перехід на фінансування НСЗУ, контрактування, оптимізація фінансового плану. Цей шлях пройдено зсередини - з відповідальністю керівника, а не спостерігача.</p>
       </div>
       <div class="comp rv">
         <h3>Працюємо за корпоративними стандартами</h3>
-        <p>Фінансовий контролінг, планування та аналітика за практиками міжнародних корпорацій — від глобального консалтингу до юриспруденції та медіа, включно з досвідом фінансового директора для компаній у США.</p>
+        <p>Фінансовий контролінг, планування та аналітика за практиками міжнародних корпорацій - від глобального консалтингу до юриспруденції та медіа, включно з досвідом фінансового директора для компаній у США.</p>
       </div>
       <div class="comp rv d1">
         <h3>Навчаємо ваші команди</h3>
-        <p>Зміни працюють лише тоді, коли їх розуміють люди. Передаємо знання системно — досвід викладання менеджменту в університеті застосовуємо в навчанні команд клієнтів.</p>
+        <p>Зміни працюють лише тоді, коли їх розуміють люди. Передаємо знання системно - досвід викладання менеджменту в університеті застосовуємо в навчанні команд клієнтів.</p>
       </div>
     </div>
   </div>
@@ -508,7 +510,7 @@ section{padding:110px 0}
     <div class="rv">
       <p class="eyebrow">Контакти</p>
       <h2 class="h2">Почнімо з короткої розмови</h2>
-      <p class="lead">Розкажіть про свою ситуацію — у першій розмові окреслимо пріоритети та конкретні наступні кроки. Безкоштовно і без зобовʼязань.</p>
+      <p class="lead">Розкажіть про свою ситуацію - у першій розмові окреслимо пріоритети та конкретні наступні кроки. Безкоштовно і без зобовʼязань.</p>
       <a class="btn btn-light" href="mailto:info@kyryliuk-consulting.com?subject=Хочу безкоштовну консультацію">Отримати безкоштовну консультацію <span class="aro">↗</span></a>
     </div>
     <ul class="c-list rv d1">
